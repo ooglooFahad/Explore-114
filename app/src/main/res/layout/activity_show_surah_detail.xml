@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgr"
+    android:fitsSystemWindows="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/text_color" />
+    <com.twotoasters.jazzylistview.JazzyListView
+        android:id="@+id/lvsurahDetail"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="5dp"
+        android:divider="@null"
+        app:effect="tilt"
+        app:max_velocity="0"
+        app:only_animate_fling="false"
+        app:only_animate_new_items="false"/>
+
+</RelativeLayout>

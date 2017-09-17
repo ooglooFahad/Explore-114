@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/popupdetail"
+        android:title="See Detail" />
+    <item
+        android:id="@+id/fb"
+        android:title="Share to Facebook" />
+    <item
+        android:id="@+id/whatsapp"
+        android:title="Share to WhatsApp" />
+    <item
+        android:id="@+id/others"
+        android:title="Share to Others" />
+</menu>

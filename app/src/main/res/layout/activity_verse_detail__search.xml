@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgr"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/text_color" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="2"
+        android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/arabictxt"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:weightSum="5"
+        android:layout_margin="5dp"
+        android:background="@drawable/custm_bg_parah"
+        android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5">
+
+                    <ScrollView
+                        android:id="@+id/scrol1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tv_arabic"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_margin="10dp"
+                            android:padding="10dp"
+                            android:textIsSelectable="true"
+                            android:gravity="center"
+                            android:text="ARABIC"
+                            android:textColor="@color/text_color"
+                            android:textStyle="bold" />
+                    </ScrollView>
+                </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/translationtxt"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/custm_bg_parah"
+        android:orientation="vertical">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="5"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="5">
+                    <ScrollView
+                        android:id="@+id/scrol2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tv_translation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:textIsSelectable="true"
+                            android:text="translation"
+                            android:textColor="@color/text_color" />
+                    </ScrollView>
+                    </RelativeLayout>
+                </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

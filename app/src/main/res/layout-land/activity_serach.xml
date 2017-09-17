@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgr"
+    android:fitsSystemWindows="true"
+    >
+
+    <LinearLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="7.5">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/text_color" />
+        <TextView
+            android:id="@+id/defaulty_lan"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="DEFAULT LANGUAGE"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@color/text_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1.5"
+            android:background="@drawable/edit_transfrnt"
+            android:drawSelectorOnTop="true">
+
+            <Spinner
+                android:id="@+id/spinner_lang"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:layout_marginRight="10dp"
+                android:entries="@array/spinner_lang"
+                android:popupBackground="@color/spinerBG"
+                android:overlapAnchor="false"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/text_color" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/search_by"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:text="SEARCH BY WORD"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@color/text_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1.5"
+            android:background="@drawable/edit_transfrnt"
+            android:drawSelectorOnTop="true">
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:drawableRight="@drawable/search_icon"
+                android:gravity="center"
+                android:hint="Type any word"
+                android:textColorHint="@color/text_color"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/text_color" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/search_by_verse"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_below="@id/et_search"
+            android:layout_marginLeft="15dp"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:text="SEARCH BY VERSE"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@color/text_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1.5"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1.2"
+                android:background="@drawable/edit_transfrnt"
+                android:drawSelectorOnTop="true">
+
+                <Spinner
+                    android:id="@+id/spiner_surah"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:popupBackground="@color/spinerBG"
+                    android:overlapAnchor="false"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:entries="@array/spinnerItems"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/text_color" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.8"
+                android:background="@drawable/edit_transfrnt"
+                android:drawSelectorOnTop="true">
+
+                <EditText
+                    android:id="@+id/et_verse"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:lines="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:hint="Verse No"
+                    android:imeOptions="actionSearch"
+                    android:inputType="number"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/text_color" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

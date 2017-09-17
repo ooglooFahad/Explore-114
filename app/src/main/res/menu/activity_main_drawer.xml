@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+        <item
+            android:id="@+id/urduTR"
+            android:icon="@android:drawable/ic_menu_search"
+            android:title="URDU Translation" />
+        <item
+            android:id="@+id/englishTR"
+            android:icon="@android:drawable/ic_menu_agenda"
+            android:title="English Translation" />
+
+
+
+
+</menu>

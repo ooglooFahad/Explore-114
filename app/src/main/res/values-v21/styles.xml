@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="YourDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/custombackground</item>
+        <item name="android:textColorPrimary">@color/text_color</item>
+    </style>
+
+    <style name="theme_transfarent" parent="Theme.AppCompat.Light">
+        ...
+    </style>
+
+    <style name="theme_transfarent.ActionBar.Transparent" parent="theme_transfarent">
+        <item name="colorPrimary">@android:color/transparent</item>
+    </style>
+
+    <style name="theme_transfarent.ActionBar" parent="theme_transfarent">
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+    </style>
+
+    <style name="Widget.MyApp.Toolbar.Solid" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/colorAccent</item>
+        <item name="android:actionMenuTextColor">@color/colorAccent</item>
+        <item name="android:textColorSecondary">@color/colorAccent</item>
+    </style>
+
+</resources>

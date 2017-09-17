@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="oogloo.com.explore114">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider128441701112162"
+            android:exported="true" />
+
+        <activity
+            android:name=".Splash"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".TabsActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".ShowParahDetail"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".ShowSurahDetail"
+            android:configChanges="orientation|screenSize" />
+        <activity android:name=".Search" />
+        <activity
+            android:name=".BookMark"
+            android:configChanges="orientation|screenSize" />
+        <activity android:name=".Setting" />
+        <activity
+            android:name=".SearchResult"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".SearchWordAR"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".SearchWordUR"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".SearchWordEN"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".VerseDetail_Search"
+            android:configChanges="orientation|screenSize" />
+        <!-- Firebase Notifications -->
+        <service android:name=".firebase.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".firebase.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- ./Firebase Notifications -->
+        <activity android:name=".firebasenotification"></activity>
+    </application>
+
+</manifest>

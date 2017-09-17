@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@android:color/transparent</color>
+    <color name="colorPrimaryDark">@android:color/transparent</color>
+    <color name="colorAccent">#ffcc60</color>
+    <color name="tabsScrollColor">#ffcc60</color>
+
+    <color name="spinerBG">#878080</color>
+    <color name="transparent">#10000000</color>
+    <color name="white">#ffffff</color>
+
+    <color name="text_color">#ffcc60</color>
+    <color name="verse_background_full">#ffffff</color>
+    <color name="custombackground">#4a2367</color>
+    <color name="stroke_color">#9b2280</color>
+
+    <color name="tab_inactive">#0212f2</color>
+    <color name="tab_active">#fcfbfb</color>
+    <color name="tabtextcolor">#ffcc60</color>
+    <color name="backgroundColor">#04f4ec</color>
+    <color name="subject_corner_color">#663263</color>
+    <color name="subject_background">#b4ab9d</color>
+    <color name="rg_corner_color">#663263</color>
+    <color name="rg_background">#fafaf9</color>
+    <color name="question_corner_color">#663263</color>
+
+    <color name="color_preloader_center">#1417b7</color>
+    <color name="color_preloader_end">#ce0f0f</color>
+    <color name="color_preloader_start">#d1882d</color>
+    <color name="spinner_deopdown_background">#663263</color>
+    <color name="spinner_deopdown_background_trans">#663263</color>
+
+
+</resources>

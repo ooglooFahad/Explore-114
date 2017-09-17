@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgr"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:layout_weight="11"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/text_color" />
+
+        <TextView
+            android:id="@+id/selected"
+            android:layout_width="match_parent"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:text="SELECTED LANGUAGE"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/text_color" />
+
+        <TextView
+            android:id="@+id/settingtext"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="URDU"
+            android:textColor="@color/text_color"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:weightSum="2.5">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/text_color" />
+
+        <TextView
+            android:id="@+id/tv"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:text="SELECT LANGUAGE :"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/text_color" />
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1.5"
+            android:weightSum="2">
+
+            <RadioButton
+                android:id="@+id/rb_urd"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="URDU"
+                android:textColor="@color/text_color" />
+
+            <RadioButton
+                android:id="@+id/rb_eng"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="ENGLISH"
+                android:textColor="@color/text_color" />
+
+
+        </RadioGroup>
+    </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

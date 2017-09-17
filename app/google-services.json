@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "452192220066",
+    "firebase_url": "https://explore-114.firebaseio.com",
+    "project_id": "explore-114",
+    "storage_bucket": "explore-114.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452192220066:android:35471d25ab2b0087",
+        "android_client_info": {
+          "package_name": "oogloo.com.explore114"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "452192220066-da3liku3o5q7lq052dbl3sd3c6ugg3j7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkw2nDsnSPd9iEXcTpf0IKq4gyM7uWric"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

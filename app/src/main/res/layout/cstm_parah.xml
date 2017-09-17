@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="2dp"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rel_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custm_bg_parah"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/ivv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="@drawable/logo_icon"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/tv_parahNAME_EN"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:hint="PARAH NAME TRANSLATION"
+                android:layout_alignParentLeft="true"
+                android:gravity="start"/>
+
+            <TextView
+                android:id="@+id/tv_parahNAME"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:hint="PARAH NAME ARABIC"
+                android:gravity="start"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/parahid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>
